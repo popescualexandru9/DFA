@@ -23,7 +23,6 @@ public:
 
 	void transitionMatrix();
 	void acceptor();
-	int numberWords() { return nrWords; }
 };
 
 

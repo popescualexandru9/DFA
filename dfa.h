@@ -16,6 +16,7 @@ class dfa {
 	int nrAlpha;
 	int nrFinalStates;
 	int nrTransitions;
+	char lambda;
 
 public:
 

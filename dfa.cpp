@@ -59,6 +59,16 @@ void dfa::acceptor()
 	std::cout << "Cuvantul: ";
 	std::cin >> word;
 
+	if(word.length()==1 && word[0]=='@')
+   	 {
+        const bool lambdaFinal = finalStates.find(startState)!= finalStates.end();
+        if(lambdaFinal)
+            std::cout<<"Lambda is accepted.";
+        else
+            std::cout<<"Lambda is not accepted.";
+        return;
+   	 }
+	
 	int currentState = startState, ok = 1;
 	for (int i = 0; i < word.length(); i++)
 	{
